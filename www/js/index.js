@@ -22,7 +22,7 @@ function onDeviceReady() {
   var viewer = new PDFTron.WebViewer({
       path: "js/lib",
       l: atob(window.licenseKey),
-      initialDoc: '/files/webviewer-demo-annotated.xod',
+      initialDoc: 'files/webviewer-demo-annotated.xod',
       enableAnnotations: true,
       disabledElements: [
         'menuButton'
