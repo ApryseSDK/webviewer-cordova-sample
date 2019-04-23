@@ -22,7 +22,7 @@ function onDeviceReady() {
   var viewer = new PDFTron.WebViewer({
       path: "js/lib",
       l: atob(window.licenseKey),
-      pdftronServer: 'https://demo.pdftron.com/',
+      pdftronServer: 'https://demo.pdftron.com/', // Make sure to change this option to point to your own server in production
       initialDoc: 'https://pdftron.s3.amazonaws.com/downloads/pl/sample.pdf',
       enableAnnotations: true,
       disabledElements: [
