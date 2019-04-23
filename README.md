@@ -6,6 +6,8 @@
 
 This repo is specifically designed for any users interested in integrating WebViewer into Cordova project. This project was generated with [Cordova CLI](https://cordova.apache.org/docs/en/latest/reference/cordova-cli/). See [Create your first Cordova app](https://cordova.apache.org/docs/en/latest/guide/cli/index.html) for more information.
 
+** If you want offline support, you must use [Custom server](https://www.pdftron.com/documentation/web/guides/custom-server-deployment) instead. You can view the offline sample in the [offline branch](https://github.com/PDFTron/webviewer-cordova-sample/tree/offline).
+
 ## Initial setup
 
 Before you begin, make sure your development environment includes [Node.js](https://nodejs.org/en/) and [Cordova CLI](https://cordova.apache.org/docs/en/latest/reference/cordova-cli/).
