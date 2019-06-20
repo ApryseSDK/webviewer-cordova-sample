@@ -18,8 +18,7 @@
  */
 
 function onDeviceReady() {
-  var viewerElement = document.getElementById('viewer');
-  var viewer = new PDFTron.WebViewer({
+  WebViewer({
       path: "js/lib",
       pdftronServer: 'https://demo.pdftron.com/', // Make sure to change this option to point to your own server in production
       initialDoc: 'https://pdftron.s3.amazonaws.com/downloads/pl/sample.pdf',
@@ -27,12 +26,9 @@ function onDeviceReady() {
       disabledElements: [
         'menuButton'
       ]
-  }, viewerElement);
-
-  viewerElement.addEventListener('ready', function() {
-    var viewerInstance = viewer.getInstance();
+  }, document.getElementById('viewer')).then(instance => {
     // call apis (https://www.pdftron.com/documentation/web/guides/ui/apis)
-  });
+  })
 }
 
 document.addEventListener("deviceready", onDeviceReady, false);
