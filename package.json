@@ -6,8 +6,7 @@
     "main": "index.js",
     "scripts": {
         "start": "cordova build browser && cordova run browser",
-        "postinstall": "npm run download-webviewer && cordova platform add browser",
-        "download-webviewer": "npx @pdftron/webviewer-downloader --webviewerLocation www/js/lib"
+        "postinstall": "node tools/copy-webviewer-files.js && cordova platform add browser"
     },
     "author": "PDFTron Systems Inc.",
     "devDependencies": {
@@ -17,6 +16,7 @@
         "fs-extra": "^7.0.1"
     },
     "dependencies": {
+        "@pdftron/webviewer": "^6.2.3",
         "cordova-browser": "^5.0.4",
         "cordova-plugin-whitelist": "^1.3.3"
     },
