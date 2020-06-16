@@ -19,13 +19,13 @@
 
 function onDeviceReady() {
   WebViewer({
-      path: "js/lib",
-      pdftronServer: 'https://demo.pdftron.com/', // Make sure to change this option to point to your own server in production
-      initialDoc: 'https://pdftron.s3.amazonaws.com/downloads/pl/sample.pdf',
-      enableAnnotations: true,
-      disabledElements: [
-        'menuButton'
-      ]
+    path: "js/lib",
+    pdftronServer: 'https://demo.pdftron.com/', // Make sure to change this option to point to your own server in production
+    initialDoc: 'https://pdftron.s3.amazonaws.com/downloads/pl/sample.pdf',
+    enableAnnotations: true,
+    disabledElements: [
+      'menuButton'
+    ]
   }, document.getElementById('viewer')).then(instance => {
     // call apis (https://www.pdftron.com/documentation/web/guides/ui/apis)
   })

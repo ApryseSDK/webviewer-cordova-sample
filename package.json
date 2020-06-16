@@ -10,15 +10,14 @@
     },
     "author": "PDFTron Systems Inc.",
     "devDependencies": {
-        "@pdftron/webviewer-downloader": "^1.0.7",
         "btoa": "^1.2.1",
         "download": "^7.1.0",
         "fs-extra": "^7.0.1"
     },
     "dependencies": {
-        "@pdftron/webviewer": "^6.2.3",
+        "@pdftron/webviewer": "^6.3.2",
         "cordova-browser": "^5.0.4",
-        "cordova-plugin-whitelist": "^1.3.3"
+        "cordova-plugin-whitelist": "^1.3.4"
     },
     "cordova": {
         "plugins": {
