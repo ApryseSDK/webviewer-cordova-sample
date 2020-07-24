@@ -15,7 +15,7 @@
         "fs-extra": "^7.0.1"
     },
     "dependencies": {
-        "@pdftron/webviewer": "^6.3.2",
+        "@pdftron/webviewer": "^7.0.0",
         "cordova-browser": "^5.0.4",
         "cordova-plugin-whitelist": "^1.3.4"
     },
