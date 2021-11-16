@@ -1,17 +1,17 @@
 {
-    "name": "webviewer-cordova-sample",
-    "displayName": "WebViewerCordovaSample",
-    "version": "1.0.0",
-    "description": "A sample WebViewer app in Cordova.",
-    "main": "index.js",
-    "scripts": {
-        "start": "cordova build browser && cordova run browser",
+		"name": "webviewer-cordova-sample",
+		"displayName": "WebViewerCordovaSample",
+		"version": "1.0.0",
+		"description": "A sample WebViewer app in Cordova.",
+		"main": "index.js",
+		"scripts": {
+				"start": "cordova build browser && cordova run browser",
 				"start-ios": "cordova build ios && cordova emulate ios ",
-        "postinstall": "node tools/copy-webviewer-files.js && cordova platform add browser"
-    },
-    "author": "PDFTron Systems Inc.",
-    "devDependencies": {
-        "btoa": "^1.2.1",
+				"postinstall": "node tools/copy-webviewer-files.js && cordova platform add browser"
+		},
+		"author": "PDFTron Systems Inc.",
+		"devDependencies": {
+				"btoa": "^1.2.1",
 				"cordova-ios": "^6.2.0",
 				"cordova-plugin-advanced-http": "^3.2.2",
 				"cordova-plugin-customurlscheme": "^5.0.2",

@@ -59,3 +59,4 @@ npm run start-ios -- --target="iPad-Pro--9-7-inch-, 15.0"
 ```
 
 - expectation: IPad simulator should launched automatically and you can see the reader app
+![](pdftronrunninginipad.png)
