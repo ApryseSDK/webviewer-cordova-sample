@@ -44,3 +44,19 @@ See [contributing](./CONTRIBUTING.md).
 
 See [license](./LICENSE).
 ![](https://onepixel.pdftron.com/webviewer-cordova-sample)
+
+# Run this example in iOS
+
+- requirements: latest MacOS + XCode installed
+
+```bash
+npm install -g plugman
+node tools/copy-webviewer-files.js
+cordova platform add ios
+cordova run --list --emulator
+## use name of the device from the list above, for example IPAD
+npm run start-ios -- --target="iPad-Pro--9-7-inch-, 15.0"
+```
+
+- expectation: IPad simulator should launched automatically and you can see the reader app
+![](pdftronrunninginipad.png)
