@@ -20,15 +20,28 @@ cd webviewer-cordova-sample
 npm install
 ```
 
-## Run
+## Run in the browser
 
 ```
 npm start
 ```
 
-To run in platforms other than browser, You can refer to official Cordova guides:
+## Run in an iOS emulator
+
+Before you begin, you need the latest MacOS and XCode installed
+
+```bash
+npm install -g plugman
+cordova platform add ios
+cordova run --list --emulator
+## use name of the device from the list above, for example IPAD
+npm run start-ios -- --target="iPad-Pro--9-7-inch-, 15.0"
+```
+
+## Run in other platforms
+
+To run in platforms other than browser and iOS, you can refer to official Cordova guides:
 - [Android](https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html)
-- [iOS](https://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html)
 - [Windows](https://cordova.apache.org/docs/en/latest/guide/platforms/windows/index.html)
 - [OS X](https://cordova.apache.org/docs/en/latest/guide/platforms/osx/index.html)
 
@@ -44,19 +57,3 @@ See [contributing](./CONTRIBUTING.md).
 
 See [license](./LICENSE).
 ![](https://onepixel.pdftron.com/webviewer-cordova-sample)
-
-# Run this example in iOS
-
-- requirements: latest MacOS + XCode installed
-
-```bash
-npm install -g plugman
-node tools/copy-webviewer-files.js
-cordova platform add ios
-cordova run --list --emulator
-## use name of the device from the list above, for example IPAD
-npm run start-ios -- --target="iPad-Pro--9-7-inch-, 15.0"
-```
-
-- expectation: IPad simulator should launched automatically and you can see the reader app
-![](pdftronrunninginipad.png)
