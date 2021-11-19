@@ -26,6 +26,8 @@
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
+        <preference name="scheme" value="app" />
+        <preference name="hostname" value="localhost" />
     </platform>
     <engine name="browser" spec="^5.0.4" />
 </widget>

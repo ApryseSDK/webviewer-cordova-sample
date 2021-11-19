@@ -29,6 +29,7 @@
 				"plugins": {
 						"cordova-plugin-whitelist": {},
 						"cordova-plugin-wkwebview-engine": {},
+						"cordova-plugin-xhr-local-file": {},
 						"cordova-plugin-customurlscheme": {
 								"URL_SCHEME": "mycustomurl"
 						},
