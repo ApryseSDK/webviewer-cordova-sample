@@ -1,31 +1,34 @@
 {
-    "name": "webviewer-cordova-sample",
-    "displayName": "WebViewerCordovaSample",
-    "version": "1.0.0",
-    "description": "A sample WebViewer app in Cordova.",
-    "main": "index.js",
-    "scripts": {
-        "start": "cordova build browser && cordova run browser",
-        "postinstall": "npm run download-webviewer && npm run add-license && cordova platform add browser",
-        "download-webviewer": "node scripts/download-webviewer.js",
-        "add-license": "node scripts/add-license.js"
+  "name": "webviewer-cordova-sample",
+  "displayName": "WebViewerCordovaSample",
+  "version": "1.0.0",
+  "description": "A sample WebViewer app in Cordova.",
+  "main": "index.js",
+  "scripts": {
+    "start": "cordova build browser && cordova run browser",
+    "postinstall": "node scripts/copy-webviewer-files.js && cordova platform add browser",
+    "lint": "eslint --fix ."
+  },
+  "author": "PDFTron Systems Inc.",
+  "devDependencies": {
+    "@pdftron/webviewer": "^10.12.0",
+    "@eslint/js": "^9.12.0",
+    "@stylistic/eslint-plugin-js": "^2.9.0",
+    "download": "^8.0.0",
+    "eslint": "^9.12.0",
+    "fs-extra": "^11.2.0",
+    "globals": "^15.10.0"
+  },
+  "dependencies": {
+    "cordova-browser": "^7.0.0",
+    "cordova-plugin-whitelist": "^1.3.5"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {}
     },
-    "author": "PDFTron Systems Inc.",
-    "devDependencies": {
-        "btoa": "^1.2.1",
-        "download": "^7.1.0",
-        "fs-extra": "^7.0.1"
-    },
-    "dependencies": {
-        "cordova-browser": "^5.0.4",
-        "cordova-plugin-whitelist": "^1.3.3"
-    },
-    "cordova": {
-        "plugins": {
-            "cordova-plugin-whitelist": {}
-        },
-        "platforms": [
-            "browser"
-        ]
-    }
+    "platforms": [
+      "browser"
+    ]
+  }
 }

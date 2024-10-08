@@ -17,22 +17,24 @@
  * under the License.
  */
 
+/*global WebViewer, document*/
+
 function onDeviceReady() {
   var viewerElement = document.getElementById('viewer');
-  var viewer = new PDFTron.WebViewer({
-      path: "js/lib",
-      l: atob(window.licenseKey),
-      initialDoc: 'files/sample.xod',
-      enableAnnotations: true,
-      disabledElements: [
-        'menuButton'
-      ]
+  var viewer = new WebViewer({
+    path: 'js/lib',
+    initialDoc: 'files/sample.xod',
+    enableAnnotations: true,
+    disabledElements: [
+      'menuButton'
+    ]
   }, viewerElement);
 
   viewerElement.addEventListener('ready', function() {
-    var viewerInstance = viewer.getInstance();
-    // call apis (https://www.pdftron.com/documentation/web/guides/ui/apis)
+    // eslint-disable-next-line no-unused-vars
+    var viewerInstance = viewer.WebViewerInstance;
+    // call APIs (https://docs.apryse.com/api/web/WebViewerInstance.html)
   });
 }
 
-document.addEventListener("deviceready", onDeviceReady, false);
+document.addEventListener('deviceready', onDeviceReady, false);
