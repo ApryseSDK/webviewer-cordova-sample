@@ -17,18 +17,21 @@
  * under the License.
  */
 
+/*global WebViewer, document*/
+
 function onDeviceReady() {
   WebViewer({
-    path: "js/lib",
-    pdftronServer: 'https://demo.pdftron.com/', // Make sure to change this option to point to your own server in production
+    path: 'js/lib',
+    webviewerServerURL: `---- Insert server URL after setup ----`,
     initialDoc: 'https://pdftron.s3.amazonaws.com/downloads/pl/sample.pdf',
     enableAnnotations: true,
     disabledElements: [
       'menuButton'
     ]
-  }, document.getElementById('viewer')).then(instance => {
-    // call apis (https://www.pdftron.com/documentation/web/guides/ui/apis)
-  })
+  // eslint-disable-next-line no-unused-vars
+  }, document.getElementById('viewer')).then((instance) => {
+    // call APIs (https://docs.apryse.com/api/web/WebViewerInstance.html)
+  });
 }
 
-document.addEventListener("deviceready", onDeviceReady, false);
+document.addEventListener('deviceready', onDeviceReady, false);
