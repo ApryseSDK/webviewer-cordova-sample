@@ -1,16 +1,20 @@
 # WebViewer - Cordova sample
 
-[WebViewer](https://www.pdftron.com/webviewer) is a powerful JavaScript-based PDF Library that's part of the [PDFTron PDF SDK](https://www.pdftron.com). It provides a slick out-of-the-box responsive UI that interacts with the core library to view, annotate and manipulate PDFs that can be embedded into any web project.
+[WebViewer](https://apryse.com/products/webviewer) is a powerful JavaScript-based PDF Library that is part of the [Apryse PDF SDK](https://apryse.com/products/core-sdk/pdf). It provides a slick out-of-the-box responsive UI that interacts with the core library to view, annotate and manipulate PDFs that can be embedded into any web project.
 
 ![WebViewer UI](https://www.pdftron.com/downloads/pl/webviewer-ui.png)
 
 This repo is specifically designed for any users interested in integrating WebViewer into Cordova project. This project was generated with [Cordova CLI](https://cordova.apache.org/docs/en/latest/reference/cordova-cli/). See [Create your first Cordova app](https://cordova.apache.org/docs/en/latest/guide/cli/index.html) for more information.
 
-** If you want offline support, you must use [Custom server](https://www.pdftron.com/documentation/web/guides/custom-server-deployment) instead. You can view the offline sample in the [offline branch](https://github.com/PDFTron/webviewer-cordova-sample/tree/offline).
+The repo uses the [WebViewer Server](https://docs.apryse.com/documentation/web/guides/wv-server-deployment/) as a backend for extending browser & file viewing compatibility. Alternatively, a [Custom server](https://docs.apryse.com/documentation/web/guides/custom-server-deployment) can be developed for use with the WebViewer.
+
+The [offline branch](https://github.com/PDFTron/webviewer-cordova-sample/tree/offline) of this repo shows how the WebViewer can be used in a Cordova app without connecting to the WebViewer server backend or using the extended functionality that the server provides.
 
 ## Initial setup
 
-Before you begin, make sure your development environment includes [Node.js](https://nodejs.org/en/) and [Cordova CLI](https://cordova.apache.org/docs/en/latest/reference/cordova-cli/).
+Before beginning, make sure the development environment includes [Node.js](https://nodejs.org/en/) and [Cordova CLI](https://cordova.apache.org/docs/en/latest/reference/cordova-cli/).
+
+This repo requires a WebViewer Server to be set up and the URL provided to the `webviewerServerURL` option for the `Webviewer` in `www/js/index.js` .
 
 ## Install
 
@@ -47,7 +51,7 @@ To run in platforms other than browser and iOS, you can refer to official Cordov
 
 ## WebViewer APIs
 
-See [API documentation](https://www.pdftron.com/documentation/web/guides/ui/apis).
+* [@pdftron/webviewer API documentation](https://docs.apryse.com/api/web/global.html#WebViewer__anchor)
 
 ## Contributing
 
@@ -56,4 +60,3 @@ See [contributing](./CONTRIBUTING.md).
 ## License
 
 See [license](./LICENSE).
-![](https://onepixel.pdftron.com/webviewer-cordova-sample)
